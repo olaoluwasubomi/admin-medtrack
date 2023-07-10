@@ -1,0 +1,165 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    width:100%;
+}
+.doctor{
+    width:100%;
+    display:flex;
+    align-items:start;
+    justify-content:space-between;
+}
+.navigation{
+    width:20%;
+    padding:20px;
+    background:#6C63FF;
+    position:sticky;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:0 auto;
+    height:100vh;
+}
+.user{
+    width:85%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.user img{
+    width:25%;
+}
+.user p{
+    margin-left:2px;
+    font-size:1em;
+    font-family: 'Montserrat', sans-serif;
+    color:#fff;
+}
+.user span{
+    display:block;
+    margin:5px 0 0;
+}
+.navigation nav{
+    margin:30px auto 0;
+}
+.navigation nav ul li{
+    list-style:none;
+}
+.navigation nav ul li a{
+    display:block;
+    text-decoration:none;
+    text-transform:capitalize;
+    font-family: 'Montserrat', sans-serif;  
+    margin:40px auto 0;
+    color:#fff;
+}
+.doctor-content{
+    width:80%;
+    padding:20px;
+}
+.user-management-head{
+    display:flex;
+    align-items:start;
+    justify-content:space-between;
+    width:100%;
+}
+.search-menu{
+    width:90%;
+}
+.search-menu input{
+    width:90%;
+    padding:10px;
+    border-radius:10px;
+    outline:none;
+    border:1px solid black;
+}
+.search-menu button{
+    padding:10px;
+    border:none;
+    background:#6C63FF;
+    color:#fff;
+    cursor:pointer;
+}
+.user-link{
+    width:15%;
+    text-decoration:none;
+    text-transform:capitalize;
+    background:#6C63FF;
+    padding:10px;
+    color:#fff;
+    text-align:center;
+    font-family: 'Montserrat', sans-serif; 
+}
+.doctor-data{
+    margin:20px auto 0;
+}
+.doctor-data table{
+    width:100%;
+    border-collapse:collapse;
+}
+.doctor-data table th,td{
+    border:1px solid #6C63FF;
+}
+.doctor-data table th{
+    padding:10px;
+    color:#6C63FF;
+    text-transform:capitalize;
+    font-family: 'Montserrat', sans-serif; 
+}
+.doctor-data table td{
+    padding:10px;
+    font-family: 'Montserrat', sans-serif; 
+    font-size:0.8em;
+    outline:none;
+}
+.doctor-data table td button{
+    padding:10px;
+    width:48%;
+    border:none;
+    background:#6C63FF;
+    color:#fff;
+    cursor:pointer;
+}
+.new-user-form{
+    margin:20px 0 0;
+    background:#6C63FF;
+    width:60%;
+    padding-bottom:20px;
+}
+.new-user-form p{
+    color:#E9ECEF;
+    font-size:1.5em;
+    font-family: 'Montserrat', sans-serif; 
+    text-align:center;
+    padding:20px 0 0;
+}
+.new-user-form form{
+    margin:10px auto 0;
+    width:100%;
+    padding:0 20px;
+}
+.new-user-form label{
+    color:#E9ECEF;
+}
+.new-user-form form input{
+    display:block;
+    width:100%;
+    padding:10px 5px;
+    margin:10px 0 10px;
+    outline:none;
+}
+.new-user-form input[type="submit"]{
+    /* margin-bottom:20px; */
+    background:#E9ECEF;
+    border:none;
+    color:#6C63FF;
+    text-transform:capitalize;
+    font-family: 'Montserrat', sans-serif; 
+    width:30%;
+    cursor:pointer;
+    font-size:1em;
+}

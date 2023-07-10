@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Management</title>
+    <link rel="icon" type="x-icon" href="img/logo-color.png">
+    <link rel="stylesheet" href="doctor-management.css">
+</head>
+<body>
+    <section class="doctor">
+        <div class="navigation">
+            <div class="user">
+                <img src="img/user-regular.svg" alt="User">
+                <p>Andrew Samuel <span>Administrator</span></p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">dashboard</a></li>
+                    <li><a href="dashboard.html">user management</a></li>
+                    <li><a href="patientmanagement.html">patient management</a></li>
+                    <li><a href="doctor-management.html">doctor management</a></li>
+                    <li><a href="appointment.html">appointment management</a></li>
+                    <li><a href="index.html">log out</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="doctor-content">
+            <div class="user-management-head">
+                <div class="search-menu">
+                    <input type="text" id="search-input" placeholder="Search">
+                    <button id="search-button">Search</button>
+                </div>
+                <a href="#new-form" class="user-link">new doctor</a>
+            </div>
+            <div class="doctor-data">
+                <div style="overflow-x:auto;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>doctor id</th>
+                                <th>name</th>
+                                <th>speciality</th>
+                                <th>email</th>
+                                <th>contact</th>
+                                <th>registration date</th>
+                                <th>doctor status</th>
+                                <th>actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td contenteditable="true">D-1145</td>
+                                <td contenteditable="true">Abel Abayomi</td>
+                                <td contenteditable="true">Oncologists</td>
+                                <td contenteditable="true">abel14@gmail.com</td>
+                                <td contenteditable="true">08156382949</td>
+                                <td contenteditable="true">25/05/2023</td>
+                                <td contenteditable="true">Active</td>
+                                <td>
+                                    <button id="check" onclick="test()">Save</button>
+                                    <button id="reveal" onclick="test()">Deactivate</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td contenteditable="true">D-4645</td>
+                                <td contenteditable="true">Tunde Omotimilehin</td>
+                                <td contenteditable="true">Cardiologists</td>
+                                <td contenteditable="true">tundetimilehin08@gmail.com</td>
+                                <td contenteditable="true">08156382949</td>
+                                <td contenteditable="true">14/05/2023</td>
+                                <td contenteditable="true">Active</td>
+                                <td>
+                                    <button>Save</button>
+                                    <button>Deactivate</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td contenteditable="true">D-0014</td>
+                                <td contenteditable="true">Omolere Lekan</td>
+                                <td contenteditable="true">Neurologists</td>
+                                <td contenteditable="true">lere1234@gmail.com</td>
+                                <td contenteditable="true">08156382949</td>
+                                <td contenteditable="true">25/05/2023</td>
+                                <td contenteditable="true">Active</td>
+                                <td>
+                                    <button>Save</button>
+                                    <button>Deactivate</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td contenteditable="true">D-1699</td>
+                                <td contenteditable="true">Adebayo Oluwakemi</td>
+                                <td contenteditable="true">Neurologists</td>
+                                <td contenteditable="true">kemi@gmail.com</td>
+                                <td contenteditable="true">08156382949</td>
+                                <td contenteditable="true">25/05/2023</td>
+                                <td contenteditable="true">Active</td>
+                                <td>
+                                    <button>Save</button>
+                                    <button>Deactivate</button>
+                                </td>
+                            </tr>
+                            <!-- <tr>
+                                <td contenteditable="true">0087</td>
+                                <td contenteditable="true">Babatunde Joseph</td>
+                                <td contenteditable="true">Neurologists</td>
+                                <td contenteditable="true">joseph45@gmail.com</td>
+                                <td contenteditable="true">08156382949</td>
+                                <td contenteditable="true">25/05/2023</td>
+                                <td contenteditable="true">Active</td>
+                                <td>
+                                    <button>Save</button>
+                                    <button>Deactivate</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td contenteditable="true">0087</td>
+                                <td contenteditable="true">Babatunde Joseph</td>
+                                <td contenteditable="true">Neurologists</td>
+                                <td contenteditable="true">joseph45@gmail.com</td>
+                                <td contenteditable="true">08156382949</td>
+                                <td contenteditable="true">25/05/2023</td>
+                                <td contenteditable="true">Active</td>
+                                <td>
+                                    <button>Save</button>
+                                    <button>Deactivate</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td contenteditable="true">0087</td>
+                                <td contenteditable="true">Babatunde Joseph</td>
+                                <td contenteditable="true">Neurologists</td>
+                                <td contenteditable="true">joseph45@gmail.com</td>
+                                <td contenteditable="true">08156382949</td>
+                                <td contenteditable="true">25/05/2023</td>
+                                <td contenteditable="true">Active</td>
+                                <td>
+                                    <button>Save</button>
+                                    <button>Deactivate</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td contenteditable="true">0087</td>
+                                <td contenteditable="true">Babatunde Joseph</td>
+                                <td contenteditable="true">Neurologists</td>
+                                <td contenteditable="true">joseph45@gmail.com</td>
+                                <td contenteditable="true">08156382949</td>
+                                <td contenteditable="true">25/05/2023</td>
+                                <td contenteditable="true">Active</td>
+                                <td>
+                                    <button>Save</button>
+                                    <button>Deactivate</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td contenteditable="true">0087</td>
+                                <td contenteditable="true">Babatunde Joseph</td>
+                                <td contenteditable="true">Neurologists</td>
+                                <td contenteditable="true">joseph45@gmail.com</td>
+                                <td contenteditable="true">08156382949</td>
+                                <td contenteditable="true">25/05/2023</td>
+                                <td contenteditable="true">Active</td>
+                                <td>
+                                    <button>Save</button>
+                                    <button>Deactivate</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td contenteditable="true">0087</td>
+                                <td contenteditable="true">Babatunde Joseph</td>
+                                <td contenteditable="true">Neurologists</td>
+                                <td contenteditable="true">joseph45@gmail.com</td>
+                                <td contenteditable="true">08156382949</td>
+                                <td contenteditable="true">25/05/2023</td>
+                                <td contenteditable="true">Active</td>
+                                <td>
+                                    <button>Save</button>
+                                    <button>Deactivate</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td contenteditable="true">0087</td>
+                                <td contenteditable="true">Babatunde Joseph</td>
+                                <td contenteditable="true">Neurologists</td>
+                                <td contenteditable="true">joseph45@gmail.com</td>
+                                <td contenteditable="true">08156382949</td>
+                                <td contenteditable="true">25/05/2023</td>
+                                <td contenteditable="true">Active</td>
+                                <td>
+                                    <button>Save</button>
+                                    <button>Deactivate</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td contenteditable="true">0087</td>
+                                <td contenteditable="true">Babatunde Joseph</td>
+                                <td contenteditable="true">Neurologists</td>
+                                <td contenteditable="true">joseph45@gmail.com</td>
+                                <td contenteditable="true">08156382949</td>
+                                <td contenteditable="true">25/05/2023</td>
+                                <td contenteditable="true">Active</td>
+                                <td>
+                                    <button>Save</button>
+                                    <button>Deactivate</button>
+                                </td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="new-user-form" id="new-form">
+                <p>Add a new doctor</p>
+                <form>
+                    <label for="name of patient">Name</label>
+                    <input type="text" placeholder="Name of the patient" name="name of patient" required>
+                    <label for="gender">Gender</label>
+                    <input type="text" placeholder="Gender" name="gender" required>
+                    <label for="speciality">Speciality</label>
+                    <input type="text" placeholder="Speciality" name="speciality" required>
+                    <label for="medicallicense">Medical License Number</label>
+                    <input type="number" placeholder="Medical license number" name="medicallicense" required>
+                    <label for="experience">Experience</label>
+                    <input type="text" placeholder="Experience" name="experience" required>
+                    <label for="dateofbirth">Date of Birth</label>
+                    <input type="date" placeholder="Date of Birth" name="dateofbirth" required>
+                    <label for="email">Email Address</label>
+                    <input type="email" placeholder="Email Address" name="email" required>
+                    <label for="emergency contact">Emergency Contact</label>
+                    <input type="number" placeholder="Emergency Contact" name="emergency contact" required>
+                    <label for="username">Username</label>
+                    <input type="text" placeholder="Username" name="username" required>
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Password" name="password" required>
+                    <label for="confirm">Confirm Password</label>
+                    <input type="password" placeholder="Confirm Password" name="confirm" required>
+                    <input type="submit" value="add doctor">
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="doctor-manage.js"></script>
+</html>

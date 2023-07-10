@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="icon" type="x-icon" href="img/logo-color.png">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  </style>
+<body>
+    <section class="main-body">
+        <div class="bug-size" id="bugg">
+            <img src="img/icon-hamburger.svg" alt="Hambugger" class="bug" id="bugg">
+        </div>
+        <div class="navigation" id="open">
+            <div class="nav-images">
+                <img src="img/cancel.png" alt="Cancel Sign" id="remove" class="cancel">
+                <img src="img/logo-color.png" alt="The Logo" class="icon">
+            </div>
+            <div class="user">
+                <img src="img/user-regular.svg" alt="User">
+                <p>Andrew Samuel <span>Administrator</span></p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">dashboard</a></li>
+                    <li><a href="#manage">user management</a></li>
+                    <li><a href="patientmanagement.html">patient management</a></li>
+                    <li><a href="doctor-management.html">doctor management</a></li>
+                    <li><a href="appointment.html">appointment management</a></li>
+                    <li><a href="index.html">log out</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="dashboard-content">
+            <div class="content-box">
+                <a href="#manage">user management</a>
+                <a href="patientmanagement.html">patient management</a>
+                <a href="doctor-management.html">doctor management</a>
+               <a href="appointment.html">appointment management</a>
+            </div>
+            <div class="user-management" id="manage">
+                <div class="user-management-head">
+                    <div class="search-menu">
+                        <input type="text" id="search-input" placeholder="Search">
+                        <button id="search-button">Search</button>
+                    </div>
+                    <a href="#" class="user-link">new user</a>
+                </div>
+                <div class="user-data">
+                    <div style="overflow-x:auto;">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>s/n</th>
+                                    <th>user id</th>
+                                    <th>name</th>
+                                    <th>email</th>
+                                    <th>sex</th>
+                                    <th>role</th>
+                                    <th>action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1.</td>
+                                    <td>5536</td>
+                                    <td>Alex Ridwan</td>
+                                    <td>alex24@gmail.com</td>
+                                    <td>Male</td>
+                                    <td>Patient</td>
+                                    <td>
+                                        <button>Edit</button>
+                                        <button>Deactivate</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2.</td>
+                                    <td>D-1145</td>
+                                    <td>Abel Abayomi</td>
+                                    <td>abel14@gmail.com</td>
+                                    <td>Male</td>
+                                    <td>Doctor</td>
+                                    <td>
+                                        <button>Edit</button>
+                                        <button>Deactivate</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3.</td>
+                                    <td>0045</td>
+                                    <td>Adebayo Susan</td>
+                                    <td>susan22@gmail.com</td>
+                                    <td>Female</td>
+                                    <td>Patient</td>
+                                    <td>
+                                        <button>Edit</button>
+                                        <button>Deactivate</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4.</td>
+                                    <td>D-4645</td>
+                                    <td>Tunde Omotimilehin</td>
+                                    <td>tundetimilehin08@gmail.com</td>
+                                    <td>Female</td>
+                                    <td>Doctor</td>
+                                    <td>
+                                        <button>Edit</button>
+                                        <button>Deactivate</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5.</td>
+                                    <td>9807</td>
+                                    <td>Oketunji Adetoun</td>
+                                    <td>oke04@gmail.com</td>
+                                    <td>Female</td>
+                                    <td>Patient</td>
+                                    <td>
+                                        <button>Edit</button>
+                                        <button>Deactivate</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>6.</td>
+                                    <td>7612</td>
+                                    <td>Oluwabisi Emmanuel</td>
+                                    <td>emmabisi99@gmail.com</td>
+                                    <td>Male</td>
+                                    <td>Patient</td>
+                                    <td>
+                                        <button>Edit</button>
+                                        <button>Deactivate</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>7.</td>
+                                    <td>D-0014</td>
+                                    <td>Omolere Lekan</td>
+                                    <td>lere1234@gmail.com</td>
+                                    <td>Male</td>
+                                    <td>Doctor</td>
+                                    <td>
+                                        <button>Edit</button>
+                                        <button>Deactivate</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>8.</td>
+                                    <td>7909</td>
+                                    <td>Samuel Ademide</td>
+                                    <td>mide01@gmail.com</td>
+                                    <td>Male</td>
+                                    <td>Patient</td>
+                                    <td>
+                                        <button>Edit</button>
+                                        <button>Deactivate</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>9.</td>
+                                    <td>D-1699</td>
+                                    <td>Adebayo Oluwakemi</td>
+                                    <td>kemi@gmail.com</td>
+                                    <td>Female</td>
+                                    <td>Doctor</td>
+                                    <td>
+                                        <button>Edit</button>
+                                        <button>Deactivate</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>10.</td>
+                                    <td>2479</td>
+                                    <td>Daramola Susan</td>
+                                    <td>daramola@gmail.com</td>
+                                    <td>Female</td>
+                                    <td>Patient</td>
+                                    <td>
+                                        <button>Edit</button>
+                                        <button>Deactivate</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="app.js"></script>
+</html>

@@ -1,0 +1,239 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    width:100%;
+}
+.main-body{
+    width:100%;
+    display:flex;
+    align-items:start;
+    justify-content:space-between;
+}
+.bug,.cancel{
+    display:none;
+}
+.bug-size{
+    display:none;
+}
+.navigation{
+    width:20%;
+    padding:20px;
+    background:#6C63FF;
+    height:100vh;
+    position:sticky;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+.user{
+    width:85%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin:10px 0 0;
+}
+.user img{
+    width:20%;
+}
+.user p{
+    margin-left:2px;
+    font-size:1em;
+    font-family: 'Montserrat', sans-serif;
+    color:#fff;
+}
+.user span{
+    display:block;
+    margin:5px 0 0;
+}
+.navigation nav{
+    margin:30px auto 0;
+}
+.navigation nav ul li{
+    list-style:none;
+}
+.navigation nav ul li a{
+    display:block;
+    text-decoration:none;
+    text-transform:capitalize;
+    font-family: 'Montserrat', sans-serif;  
+    margin:40px auto 0;
+    color:#fff;
+}
+.dashboard-content{
+    width:80%;
+    padding:20px;
+}
+.content-box{
+    display:flex;
+    align-items:start;
+    justify-content:space-between;
+    width:100%;
+}
+.content-box  a{
+    width:24%;
+    background:#6C63FF;
+    padding:80px 0;
+    border-radius:10px;
+    display:block;
+    text-transform:capitalize;
+    text-decoration:none;
+    text-align:center;
+    color:#fff;
+    font-family: 'Montserrat', sans-serif;  
+}
+.user-management{
+    margin:20px auto 0;
+}
+.user-management-head{
+    display:flex;
+    align-items:start;
+    justify-content:space-between;
+    width:100%;
+}
+.search-menu{
+    width:90%;
+}
+.search-menu input{
+    width:90%;
+    padding:10px;
+    border-radius:10px;
+    outline:none;
+    border:1px solid black;
+}
+.search-menu button{
+    padding:10px;
+    border:none;
+    background:#6C63FF;
+    color:#fff;
+    cursor:pointer;
+}
+.user-link{
+    width:15%;
+    text-decoration:none;
+    text-transform:capitalize;
+    background:#6C63FF;
+    padding:10px;
+    color:#fff;
+    text-align:center;
+    font-family: 'Montserrat', sans-serif; 
+}
+.user-data{
+    margin:20px auto 0;
+}
+.user-data table{
+    width:100%;
+    border:1px solid #6C63FF;
+    border-collapse:collapse;
+}
+.user-data table thead th{
+    padding:10px;
+    color:#6C63FF;
+    text-transform:capitalize;
+    font-family: 'Montserrat', sans-serif; 
+    border:1px solid #6C63FF;
+    font-size:1em;
+}
+.user-data table td{
+    border:1px solid #6C63FF;
+    padding:10px 10px;
+    font-family: 'Montserrat', sans-serif; 
+    font-size:0.8em;
+    /* text-align:center; */
+}
+.user-data table td button{
+    padding:10px;
+    width:48%;
+    border:none;
+    background:#6C63FF;
+    color:#fff;
+    /* font-size:0.7em; */
+}
+.icon{
+    width:20%;
+    border-radius:50px;
+}
+@media screen and (max-width:900px){
+    .main-body{
+        flex-direction:column;
+    }
+    .bug-size{
+        background:#6C63FF;
+        width:100%;
+        padding:20px;
+        display:block;
+    }
+    .bug{
+        display:block;
+        width:10%;
+    }
+    .navigation{
+        display:none;
+        width:100%;
+        height:120vh;
+        position: relative;
+        background:#6C63FF;
+    }
+    .nav-images{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        width:30%;
+        margin:0;
+    }
+    .nav-images img{
+        width:40%;
+        /* padding:10px; */
+    }
+    .cancel{
+        margin:10px 0 ;
+    }
+    .navigation nav ul li a{
+        font-size:1em;
+    }
+    .icon{
+        margin:10px 0 0;
+        border-radius:50px;
+    }
+    .user{
+        width:60%;
+        margin:20px 0 0;
+    }
+    .user img{
+        width:15%;
+    }
+    .dashboard-content{
+        width:100%;
+        padding:10px 20px;
+    }
+    .content-box{
+        flex-direction:column;
+    }
+    .content-box a{
+        width:100%;
+        margin:10px auto 0;
+    }
+    .user-management-head{
+        flex-direction:column;
+    }
+    .search-menu{
+        width:100%;
+    }
+    .search-menu input{
+        width:75%;
+    }
+    .search-menu button{
+        width:20%;
+    }
+    .user-link{
+        width:50%;
+        margin:10px 0 0;
+    }
+    .user-data table td button{
+        width:100%;
+        margin:10px auto 0;
+    }
+}

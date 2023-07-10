@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Management</title>
+    <link rel="stylesheet" href="appointment.css">
+    <link rel="icon" type="x-icon" href="img/logo-color.png">
+</head>
+<body>
+    <section class="appointment">
+        <div class="navigation">
+            <div class="user">
+                <img src="img/user-regular.svg" alt="User">
+                <p>Andrew Samuel <span>Administrator</span></p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">dashboard</a></li>
+                    <li><a href="dashboard.html">user management</a></li>
+                    <li><a href="patientmanagement.html">patient management</a></li>
+                    <li><a href="doctor-management.html">doctor management</a></li>
+                    <li><a href="#">appointment management</a></li>
+                    <li><a href="index.html">log out</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="appointment-body">
+            <div class="user-management-head">
+                <div class="search-menu">
+                    <input type="text" id="search-input" placeholder="Search for appointment">
+                    <button id="search-button">Search</button>
+                </div>
+                <!-- <a href="#new-form" class="user-link">new user</a> -->
+            </div>
+            <div class="appointment-data">
+                <div style="overflow-x:auto;">
+                    <table>
+                        <tr>
+                            <th>patient name</th>
+                            <th>date</th>
+                            <th>time</th>
+                            <th>reason</th>
+                            <th>doctor</th>
+                            <th>appointment status</th>
+                            <th>actions</th>
+                        </tr>
+                        <tr>
+                            <td contenteditable="true">Alex Ridwan</td>
+                            <td contenteditable="true">12/4/2023</td>
+                            <td contenteditable="true">3:00pm</td>
+                            <td contenteditable="true">Regular Checkup</td>
+                            <td contenteditable="true">Dr. Abel</td>
+                            <td contenteditable="true">Confirmed</td>
+                            <td contenteditable="false">
+                                <button>Cancel</button>
+                                <button>Reschedule</button>
+                                <button style="display: none;">Save</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td contenteditable="true">Oketunji Adetoun</td>
+                            <td contenteditable="true">15/4/2023</td>
+                            <td contenteditable="true">10:00am</td>
+                            <td contenteditable="true">Consultation</td>
+                            <td contenteditable="true">Dr. Tunde</td>
+                            <td contenteditable="true">Not Confirmed</td>
+                            <td contenteditable="false">
+                                <button>Cancel</button>
+                                <button>Reschedule</button>
+                                <button style="display:none;">Save</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td contenteditable="true">Oluwabisi Emmanuel</td>
+                            <td contenteditable="true">19/4/2023</td>
+                            <td contenteditable="true">2:00pm</td>
+                            <td contenteditable="true">Consultation</td>
+                            <td contenteditable="true">Dr. Lekan</td>
+                            <td contenteditable="true">Confirmed</td>
+                            <td contenteditable="false">
+                                <button>Cancel</button>
+                                <button>Reschedule</button>
+                                <button style="display:none;">Save</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td contenteditable="true">Samuel Ademide</td>
+                            <td contenteditable="true">22/4/2023</td>
+                            <td contenteditable="true">8:00am</td>
+                            <td contenteditable="true">Check Up</td>
+                            <td contenteditable="true">Dr. Abel</td>
+                            <td contenteditable="true">Confirmed</td>
+                            <td contenteditable="false">
+                                <button>Cancel</button>
+                                <button>Reschedule</button>
+                                <button style="display:none;">Save</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td contenteditable="true">Daramola Susan</td>
+                            <td contenteditable="true">29/4/2023</td>
+                            <td contenteditable="true">12:00pm</td>
+                            <td contenteditable="true">Regular Checkup</td>
+                            <td contenteditable="true">Dr. Abel</td>
+                            <td contenteditable="true">Not Confirmed</td>
+                            <td contenteditable="false">
+                                <button>Cancel</button>
+                                <button>Reschedule</button>
+                                <button style="display:none;">Save</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td contenteditable="true">Oketunji Adetoun</td>
+                            <td contenteditable="true">120/5/2023</td>
+                            <td contenteditable="true">6:00pm</td>
+                            <td contenteditable="true">Consultation</td>
+                            <td contenteditable="true">Dr. Adekunle</td>
+                            <td contenteditable="true">Canceled</td>
+                            <td contenteditable="false">
+                                <button>Cancel</button>
+                                <button>Reschedule</button>
+                                <button style="display:none;">Save</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    let one = document.getElementById("show");
+    let two = document.getElementById("store");
+
+    one.onclick = function(){
+        two.style.display = "block";
+        one.style.display = "none";
+    }
+
+    two.onclick = function(){
+        two.style.display = "none";
+        one.style.display = "block";
+    }
+
+</script>
+</html>

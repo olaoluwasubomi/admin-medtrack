@@ -1,0 +1,117 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    width:100%;
+}
+.appointment{
+    width:100%;
+    display:flex;
+    align-items:start;
+    justify-content:space-between;
+}
+.navigation{
+    width:20%;
+    padding:20px;
+    background:#6C63FF;
+    position:sticky;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:0 auto;
+    height:100vh;
+}
+.user{
+    width:85%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.user img{
+    width:25%;
+}
+.user p{
+    margin-left:2px;
+    font-size:1em;
+    font-family: 'Montserrat', sans-serif;
+    color:#fff;
+}
+.user span{
+    display:block;
+    margin:5px 0 0;
+}
+.navigation nav{
+    margin:30px auto 0;
+}
+.navigation nav ul li{
+    list-style:none;
+}
+.navigation nav ul li a{
+    display:block;
+    text-decoration:none;
+    text-transform:capitalize;
+    font-family: 'Montserrat', sans-serif;  
+    margin:40px auto 0;
+    color:#fff;
+}
+.appointment-body{
+    width:80%;
+    padding:20px;
+}
+.user-management-head{
+    display:flex;
+    align-items:start;
+    justify-content:space-between;
+    width:100%;
+}
+.search-menu{
+    width:70%;
+    margin:0 auto;
+}
+.search-menu input{
+    width:90%;
+    padding:10px;
+    border-radius:10px;
+    outline:none;
+    border:1px solid black;
+}
+.search-menu button{
+    padding:10px;
+    border:none;
+    background:#6C63FF;
+    color:#fff;
+    cursor:pointer;
+}
+.appointment-data{
+    margin:20px auto 0;
+}
+.appointment-data table{
+    width:100%;
+    border-collapse:collapse;
+}
+.appointment-data table th,td{
+    border:1px solid #6C63FF;
+}
+.appointment-data table th{
+    padding:10px;
+    color:#6C63FF;
+    text-transform:capitalize;
+    font-family: 'Montserrat', sans-serif; 
+}
+.appointment-data table td{
+    padding:10px;
+    font-family: 'Montserrat', sans-serif; 
+    font-size:0.8em;
+    outline:none;
+}
+.appointment-data table td button{
+    padding:10px;
+    width:48%;
+    border:none;
+    background:#6C63FF;
+    color:#fff;
+    cursor:pointer;
+}
